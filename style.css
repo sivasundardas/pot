@@ -35,7 +35,9 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 100px;
+    width: 80px;
+    border-radius: 30%;
+
 }
 
 nav ul li{
@@ -68,6 +70,12 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;;
 }
+#bars{
+    display:none;
+}
+#close{
+    display:none;
+}
 .header-text{
     display: flex;
 }
@@ -95,6 +103,7 @@ nav ul li a:hover::after{
     color:red
 
 }
+
 /* ------------------------about------------------- */
 
 #about{
@@ -363,6 +372,7 @@ form .btn2{
 
 }
 
+
 /* ---------------------css small------------- */
 
 nav .fas{
@@ -372,8 +382,9 @@ nav .fas{
 @media only screen and (max-width:600px){
     #header{
         /* background-image: url(images/phone-background.png); */
-        background-image: url(images/Updatedbg.png);
+        /* background-image: url(images/Updatedbg.png); */
     }
+   
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -414,6 +425,9 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    #sidemenu{
+        display:none;
+    }
     .sub{
         font-size: 40px;
 
@@ -438,9 +452,29 @@ nav .fas{
         font-size: 40px;
 
     }
+    #bars{
+        display:block;
+    }
+   
 }
+
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+@media only screen and (max-width:1050px){
+    .header-text{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-img{
+        height: 60vh;
+    }
+    .header-text-content{
+        text-align: center;
+    }
 }
